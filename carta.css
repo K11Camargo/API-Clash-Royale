@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+body{  
+    background-image: url(img/clash\ royale\ fundo.png);
+    display: flex;
+    grid-template-rows: 100px 1fr 100px;
+    flex-direction: column;
+}
+
+header{
+    height: 14vh;        
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 71vh;
+    margin-top: 4%;
+}
+
+
+.barra{
+    display: flex;
+    align-items: end;
+    background-color: #D9D9D9;
+    height: 100px;
+    width: 1295px;  
+    border-radius: 100px;
+    margin: 1%;
+    cursor: text;
+}
+
+.Pesquisar{
+    background-color: #D9D9D9;
+    border-radius: 15%;
+    height: 100px;
+    width: 90%;
+    margin-left: 1.5%;
+    justify-content: left;
+    font-size: 70px;
+    outline: none;
+    border: #D9D9D9;
+}
+
+.lupa{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    left: 30%;
+    display: flex;
+    background-image: url(./img/pesquisa-de-lupa\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 3%;
+    margin-bottom: 11px;
+    
+}
+
+.logoclash{
+
+    position: absolute;
+    left: 77%;
+    top: 1%;
+    
+}
+
+.cinza{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5F6678;
+    width: 90%;  
+    height: 100vh;
+    
+}
+
+.branco{
+
+    display: flex;
+    background-color: white;
+    height: 88%;
+    width: 100%;  
+    margin: 1%;
+    margin-top: 4%;
+}
+
+/* parte esquerda */
+
+.esquerda{
+    background-color: #5F6678;
+    width: 35%;
+    height: 59vh;
+    margin: 1%;
+    flex-direction: column;
+    display: grid;
+}
+.carta{
+    background-image: url(./img/lenhador.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 555px;
+    left: 15%;
+    width: 700px;
+    height: 500px;
+    margin: 1%;
+}
+
+.info{
+    background-color: #D9D9D9;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    height: 470px;
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+}
+.informacoes{
+        margin: 1.5%;
+        width: 45%;
+        height: 200px;
+        background-color: #BDD0D6;
+        word-wrap: break-word;
+
+    }
+.informacoes2{
+        margin: 1.5%;
+        width: 45%;
+        height: 200px;
+        background-color: #BDD0D6;
+    }
+
+.baixo{
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    height: 470px;
+    position: absolute;
+    bottom: -50%;
+}
+.informacoes3{
+        margin: 1.5%;
+        width: 45%;
+        height: 200px;
+        background-color: #FBFEF7;
+    }
+.informacoes4{
+        margin-top: 15px;
+        margin-left: 3%;
+        width: 45%;
+        height: 200px;
+        background-color: #FBFEF7;
+    }
+
+    /* parte direita */
+
+    .direita{
+        width: 58%;
+        height: 95%;
+        margin: 1%;
+        flex-direction: column;
+        display: grid;
+    }
+
+    .verde{
+        background-color: #61BBB2;
+        width: 95%;
+        height: 200px;
+        border-radius: 40px;
+        
+    }
+    .ceu{
+        margin: 1%;
+        margin-left: 150px;
+        display: inline-flex;
+        color: #FBFEF7;
+        gap: 950px;
+    }
+
+    .ceu h1{
+        font-size: 50px; 
+    }    
+ 
+    .ceu2{
+        margin: 1%;
+        margin-left: 150px;
+        display: inline-flex;
+        color: #FBFEF7;
+    }
+
+    .ceu2 h1{
+        font-size: 40px; 
+        margin-left: 900px;
+    }    
+
+    :root{
+        --colorBack: #040305;
+        --colorPurple: #fff;
+        --colorGrey: rgb (87, 87, 87);
+    }
+    
+    .container span{
+        color: #ead520;
+        font-size: 50px;
+        animation-name: lendaria;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    .container span:nth-of-type(2){
+        animation-delay: 0.15s;
+    }
+    .container span:nth-of-type(3){
+        animation-delay: 0.45s;
+    }
+    .container span:nth-of-type(4){
+        animation-delay: 0.60s;
+    }
+    .container span:nth-of-type(5){
+        animation-delay: 0.75s;
+    }
+    .container span:nth-of-type(6){
+        animation-delay: 0.90s;
+    }
+    .container span:nth-of-type(7){
+        animation-delay: 1.05s;
+    }
+    .container span:nth-of-type(8){
+        animation-delay: 1.20s;
+    }
+    @keyframes lendaria {
+        0%{
+            color: #fff;
+            text-shadow: 0 0 12px var(--colorPurple),
+            0 0 50px var(--colorPurple),
+            0 0 100px var(--colorPurple);
+        }
+
+    }
+
+    .TextosCartas{
+        font-size: 50px;
+        height: 450px;
+        width: 900px;  
+        position: relative;
+        left: 500px;
+        top: -150px;
+    }
